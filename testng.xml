@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Jawal/IdeaProjects/sku2">
+        <classes>
+            <class name="TestCases.GET_Tests">
+                <methods>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                    <include name="test03"/>
+                    <include name="test04"/>
+                </methods>
+            </class>
+            <class name="TestCases.POST_Tests">
+                <methods>
+                    <include name="test01"/>
+                </methods>
+            </class>
+            <class name="TestCases.DELETE_Tests">
+                <methods>
+                    <include name="test01"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
