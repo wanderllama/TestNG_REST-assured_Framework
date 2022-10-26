@@ -1,0 +1,7 @@
+Utilities\Util.class
+Utilities\ConfigurationReader.class
+TestCases\Base.class
+TestCases\GET_Tests.class
+Utilities\Logger.class
+TestCases\DELETE_Tests.class
+TestCases\POST_Tests.class

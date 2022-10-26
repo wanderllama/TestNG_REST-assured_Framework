@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 6.711 s <<< FAILURE! - in TestSuite
+TestCases.POST_Tests.test01  Time elapsed: 0.671 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <200>.
+
+	at TestCases.POST_Tests.test01(POST_Tests.java:28)
+
+TestCases.DELETE_Tests.test01  Time elapsed: 0.265 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <204> but was <200>.
+
+	at TestCases.DELETE_Tests.test01(DELETE_Tests.java:22)
+

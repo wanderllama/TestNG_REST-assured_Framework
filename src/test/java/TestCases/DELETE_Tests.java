@@ -22,5 +22,5 @@ public class DELETE_Tests {
         // delete response has no content -> why I used status code 204
         checkStatusCode(response , 204);
     }
-    
+
 }
