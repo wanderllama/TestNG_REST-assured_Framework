@@ -72,12 +72,15 @@ public class GET_Tests extends Base {
                 }
             } catch (java.lang.ClassCastException e) {
                 Logger.logMessage("invalid data type stored for description of item createdAt: " + allItems.get(i).get("createdAt"));
+                allItems.remove(i--);
             }
         }
 
+        long count = allItems.stream().filter(item -> item.get("description").equalsIgnoreCase("jelly donut")).count();
+
         Assert.assertTrue(jellyDonuts.stream().allMatch(item -> item.get("description").equalsIgnoreCase("jelly donut")));
 
-        Assert.assertEquals(jellyDonuts.size() , 169);
+        Assert.assertEquals(jellyDonuts.size() , count);
     }
 
     @Test(testName = "print the price of all the jelly donuts")
